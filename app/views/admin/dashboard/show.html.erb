@@ -1,2 +1,25 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Your Product Summary</h1>
+
+<%= "Total Products: #{Product.count("name")}" %>
+<%= "Total Categories: #{Category.count()}" %>
+<%= "Total Categories: #{Category.count()}" %>
+<div class="card" >
+  <div class="card-body">
+   <h3 class="card-title">Products: </h3>
+    <p class="card-text">You currently have
+    <%=" #{Product.count("name")} products." %>
+    </p>
+    <a href="/" class="btn btn-primary">See your products</a>
+  </div>
+</div>
+<div class="card" >
+  
+  <div class="card-body">
+    <h3 class="card-title">Categories</h3>
+    <p class="card-text">Your products have
+    <%=" #{Category.count()} categories." %>
+    </p>
+    <a href="/categories/1" class="btn btn-primary">See your categories</a>
+  </div>
+</div>
+
