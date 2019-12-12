@@ -19,6 +19,9 @@ Rails.application.routes.draw do
     resources :products, :categories, except: [:edit, :update, :show]
   end
 
+  resources :users, except: [:edit, :update]
+  resources :sessions, except: [:edit, :update]
+
 
   # namespace :about do
   #   root to: 'about#show'
