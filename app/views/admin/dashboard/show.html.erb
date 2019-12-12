@@ -1,15 +1,14 @@
 <h1>Your Product Summary</h1>
 
-<%= "Total Products: #{Product.count("name")}" %>
-<%= "Total Categories: #{Category.count()}" %>
-<%= "Total Categories: #{Category.count()}" %>
+
+
 <div class="card" >
   <div class="card-body">
-   <h3 class="card-title">Products: </h3>
+   <h3 class="card-title">Products </h3>
     <p class="card-text">You currently have
     <%=" #{Product.count("name")} products." %>
     </p>
-    <a href="/" class="btn btn-primary">See your products</a>
+    <%= link_to 'See your Products', [:admin, :products], class: 'btn btn-info' %>
   </div>
 </div>
 <div class="card" >
@@ -19,7 +18,8 @@
     <p class="card-text">Your products have
     <%=" #{Category.count()} categories." %>
     </p>
-    <a href="/categories/1" class="btn btn-primary">See your categories</a>
+    <%= link_to 'See your Categories', [:admin, :categories], class: 'btn btn-info' %>
+    
   </div>
 </div>
 
