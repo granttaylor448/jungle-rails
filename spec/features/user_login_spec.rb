@@ -5,7 +5,7 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
   # SETUP
   before :each do
    @user = User.create!(
-   name: 'Grant',
+   name: 'Mark',
    email: '1@1.com',
    password: "123",
    password_confirmation: "123"
