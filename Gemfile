@@ -67,4 +67,4 @@ group :test do
 end
 
 gem 'rails_12factor', group: :production
-ruby "2.4.9"
+ruby "2.3.5"
