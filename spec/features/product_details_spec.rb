@@ -28,8 +28,8 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
 
     
     expect(page).to have_css '.product-detail', count: 1
-    puts page.html
-    save_screenshot
+    
+    # save_screenshot
   
 
     end
