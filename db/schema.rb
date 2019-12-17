@@ -64,6 +64,8 @@ ActiveRecord::Schema.define(version: 20191212172419) do
     t.datetime "updated_at",      null: false
   end
 
+  # add_index "users", :email, :unique => true
+
   add_foreign_key "line_items", "orders"
   add_foreign_key "line_items", "products"
   add_foreign_key "products", "categories"
