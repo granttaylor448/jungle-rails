@@ -76,10 +76,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
+  config.action_mailer.default_url_options = { :host => 'https://fathomless-basin-67142.herokuapp.com/' }
   ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.gmail.com',
-  :domain         => 'https://fathomless-basin-67142.herokuapp.com/',
+  :domain         => 'mail.google.com',
   :port           => 587,
   :user_name      => ENV['GMAIL_USERNAME'],
   :password       => ENV['GMAIL_PASSWORD'],
