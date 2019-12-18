@@ -64,7 +64,9 @@ class OrdersController < ApplicationController
         item_price: product.price,
         total_price: product.price * quantity
       )
+      if current_user
       UserMailer.send_notification_email(@user, order).deliver_now
+      end
     end
     order.save!
     order

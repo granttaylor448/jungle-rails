@@ -86,14 +86,5 @@ Rails.application.configure do
   :authentication => :plain,
   :enable_starttls_auto => true
 }
-# config.action_mailer.delivery_method = :smtp
-#    config.action_mailer.smtp_settings = {
-#      address: 'smtp.mail.com',
-#      port: 587,
-#      domain: 'https://fathomless-basin-67142.herokuapp.com/',
-#      user_name: ENV['GMAIL_USERNAME'],
-#      password: ENV['GMAIL_PASSWORD'],
-#      authentication: 'plain',
-#      enable_starttls_auto: true }
 
 end
