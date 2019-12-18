@@ -77,23 +77,23 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-#   ActionMailer::Base.smtp_settings = {
-#   :address        => 'smtp.gmail.com',
-#   :domain         => 'mail.google.com',
-#   :port           => 587,
-#   :user_name      => ENV['GMAIL_USERNAME'],
-#   :password       => ENV['GMAIL_PASSWORD'],
-#   :authentication => :plain,
-#   :enable_starttls_auto => true
-# }
-config.action_mailer.delivery_method = :smtp
-   config.action_mailer.smtp_settings = {
-     address: 'smtp.mail.com',
-     port: 587,
-     domain: 'https://fathomless-basin-67142.herokuapp.com/',
-     user_name: ENV['GMAIL_USERNAME'],
-     password: ENV['GMAIL_PASSWORD'],
-     authentication: 'plain',
-     enable_starttls_auto: true }
+  ActionMailer::Base.smtp_settings = {
+  :address        => 'smtp.gmail.com',
+  :domain         => 'https://fathomless-basin-67142.herokuapp.com/',
+  :port           => 587,
+  :user_name      => ENV['GMAIL_USERNAME'],
+  :password       => ENV['GMAIL_PASSWORD'],
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
+# config.action_mailer.delivery_method = :smtp
+#    config.action_mailer.smtp_settings = {
+#      address: 'smtp.mail.com',
+#      port: 587,
+#      domain: 'https://fathomless-basin-67142.herokuapp.com/',
+#      user_name: ENV['GMAIL_USERNAME'],
+#      password: ENV['GMAIL_PASSWORD'],
+#      authentication: 'plain',
+#      enable_starttls_auto: true }
 
 end
