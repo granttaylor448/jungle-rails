@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<header class="page-header">
+<h1>Thank you <% @user.name %> for your order!</h1>
+<p> Please find your order summary below </p>
+</header>
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th colspan="2">Order Summary</th>
+    <th>Unit Price</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+</thead>
+<tbody>
+  <% @order.line_items.each do |item| %>
+    <%= render 'item', product: item.product, quantity: item[:quantity].to_i %>
+  <% end %>
+</tbody>
+<tfoot>
+  <tr>
+    <th colspan="4">
+      TOTAL:
+    </th>
+    <th>
+      <%= number_to_currency (@order.total_cents / 100.0) %>
+    </th>
+  </tr>
+</tfoot>
+</table>
+</div>
+</html>

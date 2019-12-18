@@ -3,12 +3,18 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
   end
-
+  
   def create
+    
+
+    @user = current_user
     charge = perform_stripe_charge
     order  = create_order(charge)
 
+    
+
     if order.valid?
+      
       empty_cart!
       cookies.delete :cart
       redirect_to order, notice: 'Your Order has been placed.'
@@ -26,6 +32,11 @@ class OrdersController < ApplicationController
     # empty hash means no products in cart :)
     update_cart({})
   end
+
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+  helper_method :current_user
   
 
   def perform_stripe_charge
@@ -53,6 +64,7 @@ class OrdersController < ApplicationController
         item_price: product.price,
         total_price: product.price * quantity
       )
+      UserMailer.send_notification_email(@user, order).deliver_now
     end
     order.save!
     order
