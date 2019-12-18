@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2. Grant inherited the project from lighthouse labs and implemented many new features and fixed several bugs in the application. Project required a solid understanding of Ruby on Rails, Heroku and git branching. Checkout the link at the top of the repo to test out the app on Heroku.
+A mini e-commerce application built with Rails 4.2. Grant inherited the project from lighthouse labs and implemented many new features and fixed several bugs in the application. The project also had RSPEC and CapyBara tests implemented by Grant. Project required a solid understanding of Ruby on Rails, Heroku and git branching. Checkout the link at the top of the repo to test out the app on Heroku.
 
 ## Photos
 
@@ -43,4 +43,5 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Database Cleaner
 * Rails bcrypt
 * Puma
+* RSPEC
 
