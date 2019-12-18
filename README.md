@@ -1,7 +1,10 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2, Grant inherited the project from lighthouse labs and implemented many new features and fixed several bugs in the application. Project required a solid understanding of Ruby on Rails, Heroku and git branching.
 
+## Photos
+
+![alt text](http://url/to/img.png)
 
 ## Setup
 
