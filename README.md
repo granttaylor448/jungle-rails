@@ -1,10 +1,20 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2, Grant inherited the project from lighthouse labs and implemented many new features and fixed several bugs in the application. Project required a solid understanding of Ruby on Rails, Heroku and git branching.
+A mini e-commerce application built with Rails 4.2. Grant inherited the project from lighthouse labs and implemented many new features and fixed several bugs in the application. Project required a solid understanding of Ruby on Rails, Heroku and git branching. Checkout the link at the top of the repo to test out the app on Heroku.
 
 ## Photos
 
-![alt text](http://url/to/img.png)
+### App Landing Page
+![App Landing Page](https://github.com/granttaylor448/jungle-rails/blob/feature/order-receipt/app/photos/App_landing_page.png?raw=true)
+
+### Stripe Enabled Checkout
+![Stripe Enabled Checkout](https://github.com/granttaylor448/jungle-rails/blob/feature/order-receipt/app/photos/Stripe_enabled_checkout.png?raw=true)
+
+### Sold Out badge on sold out products
+![Sold Out badge on sold out products](https://github.com/granttaylor448/jungle-rails/blob/feature/order-receipt/app/photos/Sold_out_badged.png?raw=true)
+
+### Register Page
+![Register Page](https://github.com/granttaylor448/jungle-rails/blob/feature/order-receipt/app/photos/products_organized_by_category.png?raw=true)
 
 ## Setup
 
@@ -28,3 +38,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+* CapyBara
+* Poltergeist
+* Database Cleaner
+* Rails bcrypt
+* Puma
+
