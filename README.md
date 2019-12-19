@@ -1,11 +1,15 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2. Grant inherited the project from lighthouse labs and implemented many new features and fixed several bugs in the application. The project also had RSPEC and CapyBara tests implemented by Grant. Project required a solid understanding of Ruby on Rails, Heroku and git branching. Checkout the link at the top of the repo to test out the app on Heroku.
+A mini e-commerce application built with Rails 4.2. Grant inherited the project from lighthouse labs and implemented many new features and fixed several bugs in the application. The application now also sends a confirmation email when a user makes an order. If you'd like to try just use card code 4111 1111 1111 1111 and put in any expiry date and 3 digit security code. The project also had RSPEC and CapyBara tests implemented by Grant. Project required a solid understanding of Ruby on Rails, Heroku and git branching. Checkout the link at the top of the repo to test out the app on Heroku.
 
 ## Photos
 
 ### App Landing Page
 ![App Landing Page](https://github.com/granttaylor448/jungle-rails/blob/feature/order-receipt/app/photos/App_landing_page.png?raw=true)
+
+### Confirmation Email
+
+![Confirmation Email](https://github.com/granttaylor448/jungle-rails/blob/master/app/photos/comfirmation_email.png?raw=true)
 
 ### Stripe Enabled Checkout
 ![Stripe Enabled Checkout](https://github.com/granttaylor448/jungle-rails/blob/feature/order-receipt/app/photos/Stripe_enabled_checkout.png?raw=true)
